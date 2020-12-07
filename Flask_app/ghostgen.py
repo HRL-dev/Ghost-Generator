@@ -8,6 +8,10 @@ app = Flask('ghost_gen')
 def home():
     return render_template('ghostform.html')
 
+@app.route('/about')
+def about():
+    return render_template('ghostabout.html')
+
 @app.route('/generate')
 def the_story():
     

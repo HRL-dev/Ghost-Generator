@@ -5,10 +5,13 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 </head>
 <body>
-	<h1>A Victorian Ghost Story Generator</h1>
-	<form action="/generate">
-		<p><button type="generate">Generate a gHoOoOoOsT story!</button></p>
+	<h1>Victorian Ghost Story Generator</h1>
+	<form action="/about">
+		<p><button class="about" type="about">About this project</button></p>
 	</form>
-	<h2>This may take a few moments - it's a large model!</h2>
+	<form action="/generate">
+		<p><button class="generator" type="generate">Generate a gHoOoOoOsT story!</button></p>
+	</form>
+	<h2 id="tip">This may take a few moments - the computer has to think of a story!</h2>
 </body>
 </html>

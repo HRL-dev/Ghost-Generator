@@ -8,7 +8,7 @@ body {
 h1 {
   color: red;
   font-size: 5em;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: cursive;
 }
 
 body {
@@ -18,14 +18,57 @@ body {
 
 h2 {
   color: white;
-  font-size: 2em;
+  font-size: 2.2em;
   font-family: monospace;
   padding-right: 100px;
   padding-left: 100px;
+  margin-bottom: 30px;
 }
 
-button {
-  color: red;
-  font-size: 1.5em;
+#tip {
+  margin-top: 75px;
+  font-size: 2.1em;
+}
+
+.about {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  font-size: 2.2em;
   font-family: monospace;
+  margin-top: 0px;
+  margin-bottom: 75px;
+  cursor: pointer;
+}
+
+.about:hover {
+  background-color: grey;
+}
+
+.home {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  font-size: 2.2em;
+  font-family: monospace;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.home:hover {
+  background-color: grey;
+}
+
+.generator {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 32px;
+  font-size: 2.5em;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+.generator:hover {
+  background-color: lightcoral;
 }
