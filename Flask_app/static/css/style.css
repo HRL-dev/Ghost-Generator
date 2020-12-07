@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  color: red;
+  font-size: 5em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: black;
+  background-size: cover;
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+  font-family: monospace;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+button {
+  color: red;
+  font-size: 1.5em;
+  font-family: monospace;
+}
