@@ -16,8 +16,8 @@ def about():
 def the_story():
     
     sess = gpt2.start_tf_sess()
-    gpt2.load_gpt2(sess, checkpoint_dir = '../checkpoint', run_name = 'run5')
-    story = gpt2.generate(sess, run_name = 'run5', checkpoint_dir = '../checkpoint', return_as_list = True)
+    gpt2.load_gpt2(sess, checkpoint_dir = './checkpoint', run_name = 'run5')
+    story = gpt2.generate(sess, run_name = 'run5', checkpoint_dir = './checkpoint', return_as_list = True)
     return render_template('ghostresults.html', story=story[0])
 
 
