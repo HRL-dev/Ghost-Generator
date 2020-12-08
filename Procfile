@@ -1,2 +1,2 @@
-web: gunicorn Flask_app/ghostgen:app
+web: gunicorn ghostgen:app
 heroku ps:scale web=1
