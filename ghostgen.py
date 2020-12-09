@@ -15,6 +15,9 @@ def about():
 @app.route('/generate')
 def the_story():
     
+    import os
+    return os.cwd()
+
     sess = gpt2.start_tf_sess()
     gpt2.load_gpt2(sess, checkpoint_dir = './checkpoint', run_name = 'run5')
     story = gpt2.generate(sess, run_name = 'run5', checkpoint_dir = './checkpoint', return_as_list = True)
