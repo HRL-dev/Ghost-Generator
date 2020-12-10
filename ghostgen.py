@@ -12,11 +12,12 @@ def home():
 def about():
     return render_template('ghostabout.html')
 
+@app.route('/examples')
+def examples():
+    return render_template('ghostexamples.html')
+
 @app.route('/generate')
 def the_story():
-    
-    import os
-    return os.getcwd()
 
     sess = gpt2.start_tf_sess()
     gpt2.load_gpt2(sess, checkpoint_dir = './checkpoint', run_name = 'run5')

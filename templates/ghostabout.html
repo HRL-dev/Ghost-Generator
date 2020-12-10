@@ -5,10 +5,15 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
 </head>
 <body>
-    <h1>About this Generator</h1>
-    <form action="/">
-		<p><button class="home" type="home">Home</button></p>
-	</form>
-	<h2>Hi! I'm Hilary Lawlor, and I built this generator in December 2020. It uses a pre-trained natural language processing model (GPT-2) that I fine-tuned with a bunch of Victorian ghost stories to write its own ghost story! Sometimes it makes sense, sometimes it's EXTREMELY dramatic, and sometimes it babbles about sparkling wine. But it wants to write some kind of a ghost story for you, so why don't you let it?<h2>
+	<h1>About this Generator</h1>
+	<div id="outer">
+		<form action="/">
+			<p class="inner"><button class="nav" id="home" type="home">Home</button></p>
+		</form>
+		<form action="/examples">
+			<p class="inner"><button class="nav" id="examples" type="examples">Example Stories</button></p>
+		</form>
+	</div>
+	<h2>Hi! I'm Hilary Lawlor, and I built this generator in December 2020. It uses a pre-trained natural language processing model (GPT-2) that I fine-tuned with a bunch of Victorian ghost stories to write its own ghost story! Sometimes it makes sense, sometimes it's EXTREMELY dramatic, and sometimes it babbles about sparkling wine. But it wants to write some kind of a ghost story for you, so why don't you let it?</h2>
 </body>
 </html>

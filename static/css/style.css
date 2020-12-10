@@ -30,34 +30,28 @@ h2 {
   font-size: 2.1em;
 }
 
-.about {
+.nav {
   background-color: black;
   border: 2px solid white;
   color: white;
   font-size: 2.2em;
   font-family: monospace;
   margin-top: 0px;
-  margin-bottom: 75px;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
-.about:hover {
+.nav:hover {
   background-color: grey;
 }
 
-.home {
-  background-color: black;
-  border: 2px solid white;
-  color: white;
-  font-size: 2.2em;
-  font-family: monospace;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  cursor: pointer;
+#outer {
+  width: 100%;
+  text-align: center;
 }
 
-.home:hover {
-  background-color: grey;
+form {
+  display: inline-block;
 }
 
 .generator {

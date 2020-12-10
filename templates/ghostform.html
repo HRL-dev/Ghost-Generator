@@ -6,9 +6,14 @@
 </head>
 <body>
 	<h1>Victorian Ghost Story Generator</h1>
-	<form action="/about">
-		<p><button class="about" type="about">About this project</button></p>
-	</form>
+	<div id="outer">
+		<form action="/about">
+			<p class="inner"></p>><button class="nav" id="about" type="about">About this project</button></p>
+		</form>
+		<form action="/examples">
+			<p class="inner"><button class="nav" id="examples" type="examples">Example Stories</button></p>
+		</form>	
+	</div>
 	<form action="/generate">
 		<p><button class="generator" type="generate">Generate a gHoOoOoOsT story!</button></p>
 	</form>
