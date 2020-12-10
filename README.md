@@ -27,15 +27,23 @@ Truly frightening. Then there was this one, in which the model seemed to become 
 
 I don't know about you, but I request NOT to drink wine that was dumped by a torrent of molasses, sparkling or not.
 
-As you can see, although some of the sentences make only a middling amount of sense, the text generation abilities of GPT-2 are truly amazing. Even if there are some mistakes, the output of the model still resembles a Victorian-era ghost story in both content and language. I call that a success!
+My favorite example thus far, and the one that most resembles an actual ghost story, is the following:
+
+"The rival ghosts were silent as they stared at each other. Even at this late hour in the match, the sharp contrast between the two phantoms told those phantoms that there was no room for any two of us in the room. As the appearance of the rival ghosts told them that there was no space between them and the light, and that the light in the room was on an object of no real discernment, they were more than willing to overlook it. They looked at, too, into the wall. As soon as the door was opened they saw something, but they could not see in, and were not able to solve the mystery. They spoke to each other, to no avail. They talked in whispers, and in any number of ways which partly explained their actions, but also proved to be uncalled for and unable to solve."
+
+As you can see, although some of the sentences make only a middling amount of sense, the text generation abilities of GPT-2 are truly amazing. Even if there are some grammatical mistakes and word/phrase repetition, the output of the model still resembles a Victorian-era ghost story in both content and language. I call that a success!
 
 ## Can I Generate My Own Ghost Stories?
 
-Short answer: [you can try!](https://ghost-generator.herokuapp.com/)
+Short answer: not at the moment, unfortunately.
 
-Longer answer: after getting my model to generate stories, I moved on to building a flask app so other people could generate ghost stories, too. I designed the flask app to be simple but effective: you push a button and you get a ghost story!
+Longer answer: after getting my model to generate stories, I moved on to building a flask app so other people could generate ghost stories, too. I designed the flask app to be simple but effective: you push a button and you get a ghost story! Locally, on my computer, it worked like a charm, if a charm took two minutes to run a model.
 
-In deploying the app to Heroku, I ran into several million bugs. The final bug was a giant cockroach that I wasn't sure I could overcome: the version of tensorflow necessary to the gpt-2-simple package that contained my model was breaking in my Heroku instance.
+In deploying the app to Heroku, I ran into several million bugs. After getting the actual app to deploy, the final bug was a giant cockroach that I just couldn't defeat: Heroku does not work with Git's Large File Storage system. Okay, I thought - I'll just upload those files to my cloned Heroku Github on their own! But alas, similar to Github, Heroku has a file size limit on its free version. In order to upload my model, I would have to pay a significant amount per month.
+
+So, I have [the app deployed](https://ghost-generator.herokuapp.com/) on Heroku, and at the moment, all it contains is a landing page with a lovely button that does NOT work, an "About" page about the project, and a page with examples of the stories. But we'll always have the memories of the time it contained a working button you could push to generate a story:
+
+![Ghost Generator landing page](/Images/ghost_gen_landing_page.png)
 
 ## What's Next?
 
