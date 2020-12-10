@@ -33,17 +33,21 @@ My favorite example thus far, and the one that most resembles an actual ghost st
 
 As you can see, although some of the sentences make only a middling amount of sense, the text generation abilities of GPT-2 are truly amazing. Even if there are some grammatical mistakes and word/phrase repetition, the output of the model still resembles a Victorian-era ghost story in both content and language. I call that a success!
 
-## Can I Generate My Own Ghost Stories?
+## Can Anybody Out There on the World Wide Web Generate Ghost Stories Using My Model?
 
 Short answer: not at the moment, unfortunately.
 
-Longer answer: after getting my model to generate stories, I moved on to building a flask app so other people could generate ghost stories, too. I designed the flask app to be simple but effective: you push a button and you get a ghost story! Locally, on my computer, it worked like a charm, if a charm took two minutes to run a model.
+Longer answer: after getting my model to generate stories, I moved on to building a flask app so other people could generate ghost stories, too. I designed the flask app to be simple but effective: you push a button and you get a ghost story! Locally, on my computer, it worked like a charm, if a charm took at least two minutes to run a model.
 
-In deploying the app to Heroku, I ran into several million bugs. After getting the actual app to deploy, the final bug was a giant cockroach that I just couldn't defeat: Heroku does not work with Git's Large File Storage system. Okay, I thought - I'll just upload those files to my cloned Heroku Github on their own! But alas, similar to Github, Heroku has a file size limit on its free version. In order to upload my model, I would have to pay a significant amount per month.
+In deploying the app to Heroku, I ran into several million bugs. After getting the actual app to deploy, the final bug was a giant cockroach that I just couldn't defeat: Heroku does not work with Git's Large File Storage system, where I had stored my model. Okay, I thought - I'll just upload those files to my cloned Heroku Github on their own! But alas, similar to Github, Heroku has a file size limit on its free version. In order to upload my model, I would have to pay a significant amount per month.
 
-So, I have [the app deployed](https://ghost-generator.herokuapp.com/) on Heroku, and at the moment, all it contains is a landing page with a lovely button that does NOT work, an "About" page about the project, and a page with examples of the stories. But we'll always have the memories of the time it contained a working button you could push to generate a story:
+So, I have [the app deployed](https://ghost-generator.herokuapp.com/) on Heroku, and at the moment, all it contains is a landing page with a lovely red "generate" button that does NOT work, an "About" page about the project, and a page with examples of the stories. But we'll always have the memories of the time it contained a working button you could push to generate a story:
 
 ![Ghost Generator landing page](/Images/ghost_gen_landing_page.png)
+
+And the truly strange stories that would result:
+
+![Ghost Generator story](/Images/ghost_gen_story.png)
 
 ## What's Next?
 
